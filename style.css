@@ -15,12 +15,16 @@ h1 {
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
+  margin: 1rem 0;
+  word-break: keep-all; 
 }
 
 h2 {
   top: 49.5%;
   left: 54%;
   transform: translate(-50%, -50%);
+  margin: 1rem 0;
+  word-break: keep-all; 
 }
 
 .video-container {
