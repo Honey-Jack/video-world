@@ -4,50 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css" />
-  <title>Video world</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      font-family: 'Noto Sans KR', sans-serif;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; /* 스크롤 제거 */
-    }
-
-    .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    iframe {
-      width: 50vw;
-      height: 28vw;
-      max-width: 1280px;
-      max-height: 720px;
-      border: none;
-    }
-
-    .back-text {
-      margin-top: -150px;
-    }
-
-    .back-text a {
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      transition: opacity 0.2s;
-    }
-
-    .back-text a:hover {
-      opacity: 1;
-    }
-  </style>
+  <title>Video Page</title>
 </head>
 <body>
   <div class="video-container">
@@ -55,12 +12,12 @@
       id="player"
       frameborder="0"
       allowfullscreen
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    ></iframe>
-  </div>
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
 
-  <div class="back-text">
-    <a href="index.html">퇴장하다</a>
+    <div class="back-text">
+      <a href="index.html">퇴장하다</a>
+    </div>
   </div>
 
   <script>
