@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>video world</title>
+</head>
+<body>
+  <h1 onclick="goToRandomVideo()">입장하다</h1>
+  <h2>아무것도</h2>
+
+  <script>
+    const videoIds = [
+      "J8vXy3yplyY",
+      "7GuEuvRfXnY",
+      "dghBBD2kwDs",
+      "b9Jl__QCIgA",
+      "RWruwZDNa78",
+      "p4TDYdtOg8A",
+      "3YU2Sa0Oxl0",
+      "AtsCE_qM5fo",
+      "gjIxYY_rPZQ",
+      "AO7aWO8nmJ8",
+      "2RTriYs4VRQ",
+      "pMq8TbgSVCc",
+      "-_p4ZnZaqUI",
+    ];
+
+    function goToRandomVideo() {
+      const randomId = videoIds[Math.floor(Math.random() * videoIds.length)];
+      window.location.href = `video.html?video=${randomId}`;
+    }
+
+    window.onpageshow = function(event) {
+  if (event.persisted) {
+    location.reload();
+  }
+};
+
+  </script>
+</body>
+</html>
