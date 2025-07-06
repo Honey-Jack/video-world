@@ -9,28 +9,102 @@ h1, h2 {
   font-size: 40px;
   color: black;
   cursor: pointer;
+  word-break: keep-all;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  text-align: center;
 }
+
 
 h1 {
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
-  margin: 1rem 0;
-  word-break: keep-all; 
 }
 
 h2 {
   top: 49.5%;
   left: 54%;
   transform: translate(-50%, -50%);
-  margin: 1rem 0;
-  word-break: keep-all; 
+}
+
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 24px;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+iframe {
+  width: 80vw;
+  height: 45vw;
+  max-width: 1280px;
+  max-height: 720px;
+  border: none;
+}
+
+
+.back-text {
+  position: absolute;
+  top: 800px;
+  right: center;
+  z-index: 10;
+}
+
+.back-text a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-text a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
